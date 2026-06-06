@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Night-Forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 50px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 100px;
+
+}
+
+.logo {
+    font-size: 30px;
+    cursor: pointer;
+    color: #ffff;
+}
+
+.nav-bar .nav-items {
+    text-decoration: none;
+    position: relative;
+    color: white;
+    margin-right: 25px;
+    padding-right: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav-bar .nav-items::after {
+    content: '';
+    left: 0;
+    bottom: -2px;
+    border-radius: 4px;
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    background: #eee;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .5s ease-in-out;
+}
+
+.nav-bar .nav-items:hover::after {
+
+    transform: scaleX(1);
+}
+
+.nav-bar .login-btn {
+    width: 130px;
+    height: 50px;
+    color: #eeee;
+    background: transparent;
+    border: 2px solid #eeee;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: .5s ease-in-out;
+}
+
+.nav-bar .login-btn:hover {
+    background-color: #eeee;
+    color: black;
+}
+
+.wrapper {
+    height: 480px;
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .login-box {
+    width: 100%;
+    padding: 40px;
+
+}
+
+.login-box h1 {
+    color: #162938;
+    font-size: 2em;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-bottom: 2px solid #162938;
+    margin: 40px 0;
+
+}
+
+.input-box label {
+    color: #eee;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 400;
+    transition: .2s ease-in-out;
+    pointer-events: none;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+    left: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background: transparent;
+    border: transparent;
+    border: none;
+    outline: none;
+    color: #eee;
+}
+
+.input-box input:-webkit-autofill,
+.input-box input:-webkit-autofill:hover,
+.input-box input:-webkit-autofill:focus,
+.input-box input:-webkit-autofill:active {
+    /* -webkit-box-shadow: 0 0 0 30px transparent inset;
+    box-shadow: 0 0 0 30px transparent inset; */
+    -webkit-text-fill-color: #eee;
+    background-color: transparent;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    line-height: 57px;
+    color: #162938;
+}
+
+
+.remember-forgot {
+    font-size: 0.9em;
+    color: #162938;
+    font-weight: 600;
+    margin: -15px 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.remember-forgot label input {
+    margin-right: 5px;
+    accent-color: #162938;
+    cursor: pointer;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: #162938;
+    cursor: pointer;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.Submit {
+    margin-top: 40px;
+    background-color: #162938;
+    color: #eee;
+    height: 45px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Submit:hover {
+    background-color: #1d3750;
+}
+
+.Submit:active {
+    background-color: #13212d;
+}
+
+.Register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.Register a {
+    text-decoration: none;
+    color: #162938;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.Register a:hover {
+    text-decoration: underline;
+}
