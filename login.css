@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(Night-Forest.jpg);
+    background: url(Assets/Night-Forest.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -149,16 +149,7 @@ header {
     color: #eee;
 }
 
-.input-box input:-webkit-autofill,
-.input-box input:-webkit-autofill:hover,
-.input-box input:-webkit-autofill:focus,
-.input-box input:-webkit-autofill:active {
-    /* -webkit-box-shadow: 0 0 0 30px transparent inset;
-    box-shadow: 0 0 0 30px transparent inset; */
-    -webkit-text-fill-color: #eee;
-    background-color: transparent;
-    transition: background-color 5000s ease-in-out 0s;
-}
+
 
 .input-box .icon {
     position: absolute;
@@ -184,7 +175,10 @@ header {
 .remember-forgot label input {
     margin-right: 5px;
     accent-color: #162938;
-    cursor: pointer;
+}
+.remember-forgot #rememberMe{
+height: 13px;
+width:13px;
 }
 
 .remember-forgot a {
