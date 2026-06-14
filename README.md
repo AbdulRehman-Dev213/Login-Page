@@ -49,3 +49,7 @@ Through this project, I practiced and improved:
 ## Conclusion
 
 This project represents an important step in my frontend development journey. It helped me gain confidence in creating professional-looking user interfaces while strengthening my understanding of modern HTML and CSS techniques through hands on experience. More improvements and advanced features will be added as I continue learning web development.
+
+## Author
+
+Abdul Rehman
