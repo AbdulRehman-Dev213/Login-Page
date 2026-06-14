@@ -175,12 +175,8 @@ header {
 .remember-forgot label input {
     margin-right: 5px;
     accent-color: #162938;
+    cursor: pointer;
 }
-.remember-forgot #rememberMe{
-height: 13px;
-width:13px;
-}
-
 .remember-forgot a {
     text-decoration: none;
     color: #162938;
