@@ -79,9 +79,15 @@ header {
     transition: .5s ease-in-out;
 }
 
+
+
 .nav-bar .login-btn:hover {
     background-color: #eeee;
     color: black;
+}
+.nav-bar .login-btn:active{
+    background-color: #a8a2a2;
+    transform: translateY(1px) scale(0.98);
 }
 
 .wrapper {
@@ -146,6 +152,24 @@ header {
     border: transparent;
     border: none;
     outline: none;
+    color: #eee;
+}
+
+.input-box input:-webkit-autofill,
+.input-box input:-webkit-autofill:hover,
+.input-box input:-webkit-autofill:focus,
+.input-box input:-webkit-autofill:active {
+    -webkit-text-fill-color: #eee;
+    caret-color: #eee;
+    box-shadow: 0 0 0 1000px rgba(22, 41, 56, 0.92) inset;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+.input-box input:-webkit-autofill + label,
+.input-box input:-webkit-autofill:hover + label,
+.input-box input:-webkit-autofill:focus + label,
+.input-box input:-webkit-autofill:active + label {
     color: #eee;
 }
 
